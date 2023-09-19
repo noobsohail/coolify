@@ -65,9 +65,9 @@ services:
       - LEMON_SQUEEZY_PRO_PLAN_IDS
       - LEMON_SQUEEZY_ULTIMATE_PLAN_IDS
     ports:
-      - "${APP_PORT:-8000}:80"
+      - "${APP_PORT:-8009}:89"
     expose:
-      - "${APP_PORT:-8000}"
+      - "${APP_PORT:-8009}"
     healthcheck:
       test: curl --fail http://localhost:80/api/health || exit 1
       interval: 4s
