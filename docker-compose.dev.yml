@@ -14,7 +14,7 @@ services:
       context: .
       dockerfile: ./docker/dev-ssu/Dockerfile
     ports:
-      - "${APP_PORT:-8000}:80"
+      - "${APP_PORT:-8009}:89"
     environment:
       PUID: "${USERID:-1000}"
       PGID: "${GROUPID:-1000}"
